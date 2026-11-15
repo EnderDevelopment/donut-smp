@@ -1,0 +1,33 @@
+name: DonutCore
+version: 1.0.0
+main: com.enderdevelopment.plugin.Main
+api-version: "1.21"
+commands:
+  balance:
+    description: Show a player's balance.
+    usage: /balance [player]
+    aliases: [bal]
+  pay:
+    description: Pay another player.
+    usage: /pay <player> <amount>
+  coinflip:
+    description: Wager on a coin flip.
+    usage: /coinflip <amount> <heads|tails>
+    aliases: [cf]
+  dice:
+    description: Wager on a dice roll.
+    usage: /dice <amount> <number 1-6>
+  spawn:
+    description: Teleport to the configured spawn.
+    usage: /spawn
+  arena:
+    description: Join or leave the PvP arena.
+    usage: /arena <join|leave>
+  donut:
+    description: DonutCore administration commands.
+    usage: /donut <setspawn|setarena|give|take|set>
+    permission: donut.admin
+permissions:
+  donut.admin:
+    description: Allows DonutCore administration commands.
+    default: op
